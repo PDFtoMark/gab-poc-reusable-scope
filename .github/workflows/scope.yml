@@ -1,0 +1,13 @@
+name: scope test
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  call-internal:
+    uses: Adobe-Enterprise-Docs/workflows/.github/workflows/validate-articles.yml@main
+    secrets: inherit
+  local-control:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo local-job-ran
