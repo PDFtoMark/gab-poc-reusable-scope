@@ -1,0 +1,9 @@
+name: control local
+on:
+  issues:
+    types: [opened]
+jobs:
+  ok:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo control-ran
