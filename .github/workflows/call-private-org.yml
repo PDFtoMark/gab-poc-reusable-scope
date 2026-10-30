@@ -1,0 +1,8 @@
+name: call-private-org
+on:
+  workflow_dispatch:
+jobs:
+  x:
+    uses: PDFtoMark/gab-poc-reusable-caller/.github/workflows/reusable.yaml@main
+    with:
+      vault-cf-access-client-id: abc
