@@ -1,0 +1,8 @@
+name: call-public
+on:
+  workflow_dispatch:
+jobs:
+  x:
+    uses: ./.github/workflows/reusable-public.yml
+    with:
+      debug: true
